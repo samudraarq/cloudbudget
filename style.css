@@ -8,6 +8,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+}
+
 .container {
   max-width: 1040px;
   margin: auto;
@@ -119,4 +125,47 @@ nav {
   padding: 12px 28px;
   border-radius: 6px;
   cursor: pointer;
+}
+
+/* Product explanation section */
+.explanation {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  height: 500px;
+}
+
+.explanation__text {
+  width: 445px;
+}
+
+.explanation__text p,
+.explanation__text a {
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 40px;
+}
+
+.explanation__text p {
+  text-align: justify;
+}
+
+.explanation__text a {
+  text-decoration: none;
+  color: #ed4c5c;
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.explanation__video {
+  margin-left: 10px;
+  position: relative;
+}
+
+.explanation__video .play-button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
