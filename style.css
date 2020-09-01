@@ -14,10 +14,14 @@ h2 {
   line-height: 43px;
 }
 
-.container {
+h3 {
+  font-size: 18px;
+}
+
+/* .container {
   max-width: 1040px;
   margin: auto;
-}
+} */
 
 /* Header */
 header {
@@ -67,10 +71,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1040px;
   color: white;
   position: absolute;
   top: 50px;
+  left: 10%;
+  right: 10%;
 }
 
 .nav-logo {
@@ -133,6 +138,7 @@ nav {
   grid-template-columns: auto auto;
   align-items: center;
   height: 500px;
+  margin: 0 10%;
 }
 
 .explanation__text {
@@ -168,4 +174,55 @@ nav {
   left: 0;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* features sections */
+
+.features {
+  height: 660px;
+  width: 100%;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 0 10%;
+}
+
+.features h2 {
+  padding-top: 63px;
+}
+
+.features__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 63px;
+}
+
+.features__card {
+  position: relative;
+}
+
+.features__card .features__card__content {
+  background: #ffffff;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  padding: 30px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.features__card .col p {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.features__card a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #ed4c5c;
+  cursor: pointer;
 }
