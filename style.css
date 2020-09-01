@@ -180,7 +180,6 @@ nav {
 
 .features {
   height: 660px;
-  width: 100%;
   text-align: center;
   background-color: #fafafa;
   padding: 0 10%;
@@ -225,4 +224,51 @@ nav {
   text-decoration: none;
   color: #ed4c5c;
   cursor: pointer;
+}
+
+/* Technology section */
+.technology-section {
+  height: 500px;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.technology-section h2 {
+  padding-top: 63px;
+}
+
+.technologies {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 53px;
+}
+
+.technology {
+  width: 190px;
+}
+
+.technology__logo {
+  position: relative;
+}
+
+.technology__logo span {
+  font-size: 100px;
+  font-weight: bold;
+  color: rgba(16, 16, 16, 0.08);
+}
+
+.technology__logo img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+.technology h3 {
+  padding-top: 20px;
+}
+
+.technology p {
+  font-size: 12px;
+  padding-top: 10px;
 }
