@@ -52,7 +52,7 @@ header {
 }
 
 .hero-desc:first-of-type {
-  margin-top: 39px;
+  margin-top: 40px;
 }
 
 .cta-btn {
@@ -73,7 +73,7 @@ nav {
   align-items: center;
   color: white;
   position: absolute;
-  top: 50px;
+  top: 30px;
   left: 10%;
   right: 10%;
 }
@@ -138,7 +138,7 @@ nav {
   grid-template-columns: auto auto;
   align-items: center;
   height: 500px;
-  margin: 0 10%;
+  padding: 0 10%;
 }
 
 .explanation__text {
@@ -271,4 +271,143 @@ nav {
 .technology p {
   font-size: 12px;
   padding-top: 10px;
+}
+
+/* app download section */
+
+.app-download {
+  height: 500px;
+  background-color: #ed4c5c;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.app-download__content {
+  color: white;
+  width: 445px;
+}
+
+.app-download__content h2 {
+  font-weight: normal;
+}
+
+.app-download__content p {
+  margin-top: 40px;
+  line-height: 140%;
+  text-align: justify;
+}
+
+.app-download__content .app-logo {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+}
+
+.app-download__image {
+  position: relative;
+  width: 445px;
+  margin-left: 20px;
+}
+
+.app-download__image .img-1 {
+  position: relative;
+  z-index: 2;
+}
+
+.app-download__image .img-2,
+.app-download__image .img-3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.app-download__image .img-2 {
+  left: -10%;
+}
+
+.app-download__image .img-3 {
+  right: -10%;
+}
+
+/* contact form */
+
+.contact {
+  height: 500px;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact__text,
+.contact__form {
+  padding-top: 117px;
+}
+
+.contact__text p {
+  width: 434px;
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.contact__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 60px);
+  grid-template-areas:
+    "first-name last-name"
+    "phone phone"
+    "service service"
+    "button .";
+  gap: 24px;
+}
+
+.contact__form .first-name {
+  grid-area: first-name;
+}
+
+.contact__form .last-name {
+  grid-area: last-name;
+}
+
+.contact__form .phone-number {
+  grid-area: phone;
+}
+
+.contact__form .service {
+  grid-area: service;
+  appearance: none;
+  background: url("./assets/ChevronDown\(E70D\).png") no-repeat;
+  background-position: right 20px top 50%;
+}
+
+.contact__form .form-btn {
+  width: 160px;
+  height: 50px;
+  background: #ed4c5c;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.contact__form input,
+.contact__form select,
+.contact__form button {
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact__form input::placeholder,
+.contact__form select::placeholder {
+  color: rgba(19, 39, 67, 0.5);
 }
