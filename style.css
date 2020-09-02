@@ -18,10 +18,10 @@ h3 {
   font-size: 18px;
 }
 
-/* .container {
-  max-width: 1040px;
+.container {
+  max-width: 1110px;
   margin: auto;
-} */
+}
 
 /* Header */
 header {
@@ -67,15 +67,19 @@ header {
 }
 
 /* Navigation */
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
+  width: 1110px;
   position: absolute;
   top: 30px;
-  left: 10%;
-  right: 10%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .nav-logo {
@@ -138,7 +142,6 @@ nav {
   grid-template-columns: auto auto;
   align-items: center;
   height: 500px;
-  padding: 0 10%;
 }
 
 .explanation__text {
@@ -177,12 +180,13 @@ nav {
 }
 
 /* features sections */
+.features-background {
+  background-color: #fafafa;
+}
 
 .features {
   height: 660px;
   text-align: center;
-  background-color: #fafafa;
-  padding: 0 10%;
 }
 
 .features h2 {
@@ -230,7 +234,6 @@ nav {
 .technology-section {
   height: 500px;
   text-align: center;
-  padding: 0 10%;
 }
 
 .technology-section h2 {
@@ -274,11 +277,12 @@ nav {
 }
 
 /* app download section */
+.app-download-background {
+  background-color: #ed4c5c;
+}
 
 .app-download {
   height: 500px;
-  background-color: #ed4c5c;
-  padding: 0 10%;
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
@@ -337,7 +341,6 @@ nav {
 
 .contact {
   height: 500px;
-  padding: 0 10%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -415,9 +418,11 @@ nav {
 /* Footer */
 
 footer {
-  height: 435px;
-  padding: 0 10%;
   background-color: #fafafa;
+}
+
+.footer {
+  height: 435px;
   font-size: 12px;
   color: #101010;
   line-height: 150%;
@@ -452,6 +457,6 @@ footer {
   align-items: center;
 }
 
-footer .copyright {
+.footer .copyright {
   margin-top: 86px;
 }
