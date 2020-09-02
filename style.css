@@ -443,6 +443,7 @@ footer {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  width: fit-content;
 }
 
 .sections .phone-number {
@@ -455,6 +456,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .footer .copyright {
